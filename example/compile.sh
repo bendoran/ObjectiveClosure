@@ -1,0 +1,12 @@
+python libs/closure/bin/build/closurebuilder.py\
+	--namespace="oc.init"\
+	--root=libs/closure\
+	--root=libs/third_party\
+	--root=../src/bdoran\
+	--root=libs/soy\
+	--root=js_uncompiled\
+	--output_mode=compiled\
+	--compiler_jar=libs/compiler.jar\
+	--compiler_flags=--compilation_level=ADVANCED_OPTIMIZATIONS\
+	--compiler_flags=--define="goog.DEBUG=false"\
+	--output_file=js/compiled.js

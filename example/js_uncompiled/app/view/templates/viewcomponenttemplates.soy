@@ -1,0 +1,20 @@
+{namespace oc.app.view.templates.ViewComponentTemplates}
+
+/**
+ * Renders the Main Menu
+ *
+ * @param items The menu items to render
+ */
+{template .MenuTemplate}
+	<div class="navbar">
+	  <div class="navbar-inner">
+	    <a class="brand" href="#">Test Site</a>
+	    <ul class="nav">
+	    
+	   		{foreach $item in $items}
+		      <li class="menu-item{if $item.active } active{/if}"><a href="#">{$item.label}</a></li>
+			{/foreach}
+	    </ul>
+	  </div>
+	</div>
+{/template}

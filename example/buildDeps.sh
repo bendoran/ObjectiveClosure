@@ -1,0 +1,1 @@
+python libs/closure/bin/build/depswriter.py --root_with_prefix="libs/soy/ ../../../libs/soy/" --root_with_prefix="../src/bdoran/ ../../../../src/bdoran/" --root_with_prefix="js_uncompiled ../../../js_uncompiled" --output_file=js_uncompiled/deps.js
